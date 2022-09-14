@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  challenge-1:
+    image: maarcoalr/challenge-1:v2
+    container_name: challenge-1
+    ports:
+      - "3000:3000"
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+      - DJANGO_SUPERUSER_EMAIL=hammer182@alura.teste
+      - DJANGO_SUPERUSER_USERNAME=hammer182
+      - DJANGO_SUPERUSER_PASSWORD=m420pTBr@
